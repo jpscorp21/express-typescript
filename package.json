@@ -1,0 +1,38 @@
+{
+    "name": "ventas-api",
+    "description": "Una api para ventas",
+    "version": "0.0.1",
+    "main": "server.js",
+    "keywords": [
+        "api",
+        "venta"
+    ],
+    "scripts": {
+        "build-ts": "tsc",
+        "start": "npm run serve",
+        "nodemon": "nodemon ./src/server.js",
+        "serve": "node dist/server.js",
+        "watch-ts": "tsc -w",
+        "watch-node": "nodemon dist/server.js",
+        "debug": "concurrently \"npm:watch-*\""        
+    },
+    "engines": {
+        "node": ">= 8.9.4"
+    },
+    "author": {
+        "name": "Jean Paul Saucedo Gonzalez",
+        "email": "jpscorp21@gmail.com"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "express": "^4.16.4"
+    },
+    "devDependencies": {
+        "@types/express": "^4.16.0",
+        "concurrently": "^4.1.0",
+        "nodemon": "^1.18.8",
+        "tslint": "^5.11.0",
+        "typescript": "^3.2.2"
+    }
+}
